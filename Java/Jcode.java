@@ -1,5 +1,3 @@
-package Java;
-
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -8,13 +6,11 @@ import java.nio.file.Path;
 
 public class Jcode {
     public static void main(String[] args) {
-        // Obtener la ruta de la carpeta actual (donde se encuentra el código)
+
         Path directorio = Paths.get("").toAbsolutePath();
 
-        // Construir la ruta a la carpeta "java" dentro de la carpeta actual
-        Path directorioJava = directorio.resolve("java");
+        Path directorioJava = directorio.resolve("Java");
 
-        // Crear la ruta completa del archivo a crear en la carpeta "java"
         Path rutaArchivo = directorioJava.resolve("resultado_java.txt");
 
         File archivo = rutaArchivo.toFile();

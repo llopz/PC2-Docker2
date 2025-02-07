@@ -1,0 +1,7 @@
+FROM openjdk:17
+
+COPY Jcode.java /app/Jcode.java
+WORKDIR /app
+
+RUN javac Jcode.java
+CMD ["java", "Jcode"]
