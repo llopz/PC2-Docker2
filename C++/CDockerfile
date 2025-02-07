@@ -1,0 +1,6 @@
+FROM gcc:latest
+WORKDIR /app
+
+COPY Ccpp.cpp .
+RUN g++ -o ejecutable Ccpp.cpp
+CMD ["./ejecutable"]

@@ -1,0 +1,5 @@
+FROM golang:1.21
+WORKDIR /app
+COPY Gcode.go .
+RUN go build -o ejecutable Gcode.go
+CMD ["./ejecutable"]
