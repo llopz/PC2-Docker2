@@ -1019,11 +1019,11 @@ for i in range(len(A) - 1):
 
 fin = time.time()
 
-tiempo = fin - inicio
+tiempo = (fin - inicio) * 1000
 
 with open(archivo, "w") as file:
     for i in A:
         file.write(str(i))
         file.write(",")
 
-print(tiempo * 1000)
+print("Python " + str(tiempo) + "ms")

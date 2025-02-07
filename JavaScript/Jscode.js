@@ -77,4 +77,4 @@ const tiempo = fin - inicio;
 
 fs.writeFileSync(archivo, A.join(","));
 
-console.log(tiempo);
+console.log("JavaScript: " + tiempo + "ms");

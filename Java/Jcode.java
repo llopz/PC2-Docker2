@@ -78,6 +78,6 @@ public class Jcode {
             e.printStackTrace();
         }
 
-        System.out.println(tiempo);
+        System.out.println("Java: " + tiempo + "ms");
     }
 }

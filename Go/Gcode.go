@@ -46,5 +46,5 @@ func main() {
         }
     }
 
-    fmt.Println(tiempo)
+    fmt.Println("Go: "+strconv.FormatFloat(tiempo, 'f', -1, 64)+"ms")
 }

@@ -1047,7 +1047,7 @@ int main()
         cout << "No se pudo abrir el archivo." << endl;
     }
 
-    cout << tiempo.count() << " ms" << endl;
+    cout << "C++: " << tiempo.count() << "ms" << endl;
 
     return 0;
 }
